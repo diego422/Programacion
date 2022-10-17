@@ -47,7 +47,7 @@ public class Pregunta12 {
             init = init - 1;
         }
 
-        //Imprimir la matriz
+        //Imprime la matriz
         for (int i = 0; i < Matrix.length; i++) {
             for (int j = 0; j < Matrix.length; j++) {
 
