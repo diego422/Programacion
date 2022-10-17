@@ -16,10 +16,8 @@ public class Pregunta12 {
      */
     public static void main(String[] args) {
         //Declaración de variables 
-        int value;
-        value = (int) (Math.random() * 100);
-        int sizeMatrix;
-        sizeMatrix = 4;
+        int value= (int) (Math.random() * 120);;
+        int sizeMatrix=4;
 
         //Llamado del metodo 
         fillmatrix(sizeMatrix, value);
@@ -28,7 +26,8 @@ public class Pregunta12 {
 
     /**
      * Este metodo lo que hace es llenar una matriz con restricciones en sus
-     * filas y números de 4 en 4 apartir de un valor aleatorio y despues se va a
+     * filas y números, la matriz es de 4 x 4. También los numeros que se 
+     * imprimen se hace apartir de un valor aleatorio y despues se va a 
      * imprirmir de manera escalonada
      *
      * @param sizeMatrix
@@ -40,9 +39,9 @@ public class Pregunta12 {
 
         //Llena la matriz aumentando en 10 y le disminuye 1
         for (int i = 0; i < Matrix.length; i++) {
-            for (int j = init; j < sizeMatrix; j++) {
+            for (int j = init; j < Matrix.length; j++) {
                 Matrix[i][j] = value;
-                value = value + 10;
+                value = value + 20;
             }
             init = init - 1;
         }
